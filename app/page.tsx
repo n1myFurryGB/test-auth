@@ -6,15 +6,15 @@ import React from "react";
 
 export default function Home() {
 
-  const session = useSession();
+ // const session = useSession();
 
-  console.log(session);
+  //console.log(session);
   
 
   return (
     <main className="flex items-center justify-center w-full h-full">
       <div className="w-72 h-72 bg-black/10 rounded-lg">
-        {session?.data ? (
+        {/* {session?.data ? (
           <Link href="/api/auth/signout">
             Sign Out
           </Link>
@@ -25,7 +25,7 @@ export default function Home() {
         )}
         <div>
           {session?.data?.user?.email}
-        </div>
+        </div> */}
         <br />
         <Link href="/profile">
           Profile
